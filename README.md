@@ -1,10 +1,10 @@
 # Pokerom
 
-A GameBoy Color (GBC) emulator written in Vala with SDL
+A GameBoy Color (GBC) emulator written in C++ with SDL 2.
 
 ## What is Pokerom?
 
-Pokerom is an emulator written in Vala designed to emulate the Nintendo GameBoy Color handheld console. It makes use of SDL for 
+Pokerom is an emulator written in C++ designed to emulate the Nintendo GameBoy handheld console. It makes use of SDL 2 for 
 displaying graphics. Although it does not achieve 100% compatibility with all games, it is capable of emulating several games 
 successfully.
 
@@ -18,12 +18,20 @@ successfully.
 
 `cd pokerom`
 
-3) Compile the Pokerom
+3) Set up build directory
 
-`make build`
+`mkdir build`
+
+`cd build`
+
+4) Compile Pokerom
+
+`cmake ..`
+
+`make`
 
 ## Running Pokerom
 
 Once compiled, simply run:
 
-`make run`
+`./pokerom`
